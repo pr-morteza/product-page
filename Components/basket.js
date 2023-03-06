@@ -68,7 +68,7 @@ export default function BasicCard() {
                                 <Typography component='span'>${cart.price} x {badgeContent} <Typography color='black' fontWeight={700} component='span'>${cart.price*badgeContent}</Typography></Typography>
                             </Box>
                             <Box>
-                                <Image onClick={()=>delt()} src={icondelt}/>
+                                <Image onClick={()=>delt()} style={{cursor:'pointer'}} src={icondelt}/>
                             </Box>
                         </Grid>: 
                         <Grid  container paddingTop={2} alignItems='center' justifyContent='center'>
