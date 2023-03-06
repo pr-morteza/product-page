@@ -95,7 +95,7 @@ function ResponsiveAppBar() {
                 href='#'
                 key={page}
                 style={{textDecoration:'none', fontWeight:700, display: 'block', color:'darkblue'}}
-                className={`m-2 ${styles.navHover}`}
+                className={`mx-2 py-4 ${styles.navBorder}`}
               >
                 {page}
               </Link>
