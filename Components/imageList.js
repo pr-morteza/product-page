@@ -35,7 +35,7 @@ export default function StandardImageList({modal}) {
       </Hidden>
 
       <Hidden mdDown>
-        <Image onClick={()=>handleOpen()} className='rounded' height={1000} width={1000} style={{width:'100%', height:'auto', objectFit:'contain'}} src={show.img2}/>
+        <Image onClick={()=>handleOpen()} className='rounded' height={1000} width={1000} style={{cursor:'pointer', width:'100%', height:'auto', objectFit:'contain'}} src={show.img2}/>
       </Hidden>
       <Hidden mdUp>
         <Image className='rounded' height={1000} width={1000} style={{width:'100%', height:'auto', objectFit:'contain'}} src={show.img2}/>
@@ -45,7 +45,7 @@ export default function StandardImageList({modal}) {
       <ImageList cols={4} gap={20}>
         {itemData.map((item,index) => (
           <ImageListItem key={item.img}
-          className={`rounded`}
+          className={`rounded-3`}
           sx={[
             {
               '&:hover': {
@@ -60,11 +60,11 @@ export default function StandardImageList({modal}) {
             <Image
               height={1000}
               width={1000}
-              style={{width:'100%', height:'auto', objectFit:'contain'}}
+              style={{zIndex:-1, cursor:'pointer', width:'100%', height:'auto', objectFit:'contain'}}
               src={item.img}
               alt='product'
               loading="lazy"
-              className={`rounded ${show===item && style.image}`}
+              className={`rounded-1 ${show===item && style.image}`}
             />
           </ImageListItem>
         ))}
