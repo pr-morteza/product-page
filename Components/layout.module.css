@@ -1,6 +1,9 @@
 .image{
     opacity: 0.7;
 } 
+.navBorder{
+    border-bottom: 0.2rem solid hsla(0, 0%, 100%, 0)
+}
 .navBorder:hover{
     border-bottom-color:hsl(26, 100%, 55%)
 }
