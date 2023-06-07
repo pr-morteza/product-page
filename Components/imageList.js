@@ -58,8 +58,8 @@ export default function StandardImageList({modal}) {
           ]}
             onClick={()=>setShow(item)}>
             <Image
-              height={1000}
-              width={1000}
+              height={500}
+              width={500}
               style={{zIndex:-1, cursor:'pointer', width:'100%', height:'auto', objectFit:'contain'}}
               src={item.img}
               alt='product'
