@@ -35,10 +35,10 @@ export default function StandardImageList({modal}) {
       </Hidden>
 
       <Hidden mdDown>
-        <Image onClick={()=>handleOpen()} className='rounded' height={1000} width={1000} style={{cursor:'pointer', width:'100%', height:'auto', objectFit:'contain'}} src={show.img2}/>
+        <Image onClick={()=>handleOpen()} className='rounded' height={500} width={500} style={{cursor:'pointer', width:'100%', height:'auto', objectFit:'contain'}} src={show.img2}/>
       </Hidden>
       <Hidden mdUp>
-        <Image className='rounded' height={1000} width={1000} style={{width:'100%', height:'auto', objectFit:'contain'}} src={show.img2}/>
+        <Image className='rounded' height={500} width={500} style={{width:'100%', height:'auto', objectFit:'contain'}} src={show.img2}/>
       </Hidden>
     </Box>
     <Hidden mdDown={hideStyle.mdDown}>
